@@ -26,13 +26,11 @@ nav {
 }
 
 nav h1 {
-
     float: left;
     line-height: 80px;
     font-size: 35px;
     font-size: inline;
     color: rgb(217, 104, 104);
-
 }
 
 nav h1 img {
@@ -73,12 +71,26 @@ nav ul li a:hover {
     transform: translateY(25vh);
 }
 
+@keyframes myown {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 .article h1 {
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1.5px;
-    font-weight: 800;
-    margin-bottom: 25px;
+
+
+
+    animation: myown;
+    animation-duration: 1.5s;
 }
 
 @keyframes typing {
